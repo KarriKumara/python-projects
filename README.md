@@ -1,2 +1,2 @@
 # python-projects
-Projects I have made in Python.
+Some projects I have made in Python.
