@@ -29,16 +29,13 @@ class SundayFinder:
         
         self.entry_button = Button(master, text="Find the sundays", command=self.enter_input)
         self.entry_button.pack(anchor = "w")
-
-        self.label_whitespace_2 = Label(master)
-        self.label_whitespace_2.pack(anchor = "w")
         
 
 
         #This part defines three radio buttons used for choosing whether to print the results in the interface,
         #into a file or both.
         self.label_entry_4 = Label(master, text="Choose how to print the results")
-        self.label_entry_4.pack(anchor = "w")
+        self.label_entry_4.pack(anchor = "w", pady= (15, 0))
         
         self.var_print_option = IntVar(value = 1)
         
@@ -49,13 +46,11 @@ class SundayFinder:
         self.radiobutton_print_both = Radiobutton(master, text="Print to both", variable=self.var_print_option, value=3)
         self.radiobutton_print_both.pack(anchor = "w")
         
-        self.label_whitespace_3 = Label(master)
-        self.label_whitespace_3.pack(anchor = "w")
         
         
         #This part defines two radio buttons used for choosing between printing the result dates in ascending or #descending order.
         self.label_entry_4 = Label(master, text="Choose display order for the dates")
-        self.label_entry_4.pack(anchor = "w")
+        self.label_entry_4.pack(anchor = "w", pady= (15, 0))
         
         self.var_descending = IntVar(value = 1)
         self.radiobutton_descending = Radiobutton(master, text="Descending", variable=self.var_descending, value=1)
@@ -63,11 +58,9 @@ class SundayFinder:
         self.radiobutton_descending.pack(anchor= "w")
         self.radiobutton_ascending.pack(anchor= "w")
 
-        self.label_whitespace_4 = Label(master)
-        self.label_whitespace_4.pack(anchor = "w")
         
         self.label_output = Label(master, text ="Read the output here:")
-        self.label_output.pack(anchor = "w")
+        self.label_output.pack(anchor = "w", pady= (15, 0))
         
         #This defines the output box into which the results and exception messages can be printed.
         self.output_box = Listbox(self.master)
